@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoPickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3f-50-csg">
+                                <rect key="frame" x="0.0" y="208" width="375" height="250"/>
+                                <subviews>
+                                    <pickerView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5e-GG-TcI">
+                                        <rect key="frame" x="-500" y="0.0" width="1375" height="250"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="F5e-GG-TcI" secondAttribute="bottom" id="BcF-D7-swl"/>
+                                    <constraint firstAttribute="height" constant="250" id="WnX-xQ-owp"/>
+                                    <constraint firstItem="F5e-GG-TcI" firstAttribute="leading" secondItem="Q3f-50-csg" secondAttribute="leading" constant="-500" id="Z3l-Ly-k66"/>
+                                    <constraint firstAttribute="trailing" secondItem="F5e-GG-TcI" secondAttribute="trailing" constant="-500" id="bKq-pb-gLk"/>
+                                    <constraint firstItem="F5e-GG-TcI" firstAttribute="top" secondItem="Q3f-50-csg" secondAttribute="top" id="zA7-on-X2i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q3f-50-csg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3VA-ps-Kpq"/>
+                            <constraint firstAttribute="trailing" secondItem="Q3f-50-csg" secondAttribute="trailing" id="RT7-2E-p3Q"/>
+                            <constraint firstItem="Q3f-50-csg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kat-T8-Ewg"/>
+                            <constraint firstItem="Q3f-50-csg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wfE-5z-CBf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerViewData" destination="F5e-GG-TcI" id="AAP-ub-YGd"/>
+                        <outlet property="viewPicker" destination="Q3f-50-csg" id="Ly6-lh-NPu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
